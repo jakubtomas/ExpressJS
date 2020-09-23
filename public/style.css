@@ -1,0 +1,279 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0 auto;
+    background-color: #eeffdd;
+
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    margin: 0; /*Add this*/
+}
+
+
+header {
+    display: block;
+    background-color: rgb(51, 102, 0);
+}
+
+
+#header_image img {
+    max-width: 100%;
+}
+
+#header_image {
+    background-image: url("top_bacground.gif");
+    display: block;
+}
+
+
+header div#language_flags {
+    display: inline-block;
+
+}
+
+header div#language_flags ul {
+    list-style-type: none;
+}
+
+header div#language_flags li {
+    display: inline-block;
+    list-style-type: none;
+    margin-left: 5px;
+}
+
+header div#date_panel {
+    /*display: inline-flex;*/
+    display: inline;
+    float: right;
+    margin-top: 24px;
+    margin-right: 20px;
+
+    font-family: trebuchet ms, monospace;
+
+    color: white;
+
+    font-weight: 600;
+
+}
+
+/* LEFT MENU */
+nav {
+    display: inline-block;
+    float: left;
+
+    background-color: #eeffdd;
+    width: 15%;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+}
+
+nav li a {
+    display: block;
+    padding: 10px 15px;
+    border-right: 1px solid #0b0b0b;
+    font-size: 17px;
+    text-decoration: none;
+    color: #336633;
+    font-weight: 600;
+    border-bottom: 2px solid #a0ce4e;
+}
+
+nav li a:hover,
+nav .menu-btn:hover {
+    background-color: #a0ce4e;
+}
+
+/*MAIN CENTER */
+main {
+    display: inline-block;
+    width: 67%;
+    border: 1px solid black;
+
+}
+
+/*RIGHT PANEL */
+aside#right_panel {
+    float: right;
+    display: inline-block;
+    width: 18%;
+    background-color: #d0e9c6;
+}
+
+#info_banner {
+    margin: 10px;
+    padding: 5px;
+    border: 1px solid black
+}
+
+#main_content {
+    display: flex;
+    flex-direction: column;
+}
+
+#main_content h1 {
+    background-color: green;
+    display: block;
+    color: white;
+    text-transform: uppercase;
+    margin: 10px;
+}
+
+main section article {
+    margin: 0 auto;
+    margin-left: 10px;
+
+
+}
+
+
+#main_content time {
+    display: inline;
+    color: black;
+    margin-left: 10px;
+    text-align: center;
+
+}
+
+.newsflash a {
+    display: inline-block;
+    width: 120px;
+    margin-top: 20px;
+}
+
+.newsflash .content {
+    display: inline-block;
+    margin-left: 10px;
+    width: 80%;
+}
+
+.pagination {
+    text-align: center;
+}
+
+
+aside#right_panel section {
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+
+    padding: 20px;
+    min-height: 100%;
+}
+
+aside#right_panel {
+    border-left: 1px solid black;
+}
+
+#right_panel h2 {
+    background-color: green;
+    display: block;
+    color: white;
+    text-transform: uppercase;
+    font-size: 19px;
+    margin-left: 10px;
+    margin-right: 10px;
+
+
+}
+
+aside#right_panel section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+aside#right_panel section ul a {
+
+    font-size: 150%;
+    text-decoration: none;
+    color: #336633;
+    padding: 3px 0;
+}
+
+
+.linkRightPanel {
+    margin: 10px 0;
+}
+
+
+footer {
+    border-top: 1px solid black;
+    padding: 7px;
+    text-align: center;
+    color: black;
+    display: block;
+}
+
+
+@media (max-width: 780px) {
+
+    nav li a {
+
+        padding: 10px 10px;
+
+    }
+
+    /* LEFT MENU */
+    nav {
+        display: inline-block;
+        float: left;
+
+        background-color: #eeffdd;
+        width: 23%;
+    }
+
+    /*MAIN CENTER */
+    main {
+        display: inline-block;
+        width: 77%;
+
+
+    }
+
+    /*RIGHT PANEL */
+    aside#right_panel {
+        display: block;
+        width: 100%;
+        background-color: #d0e9c6;
+    }
+}
+
+@media (max-width: 500px) {
+    /* LEFT MENU */
+    nav {
+
+        background-color: #eeffdd;
+        width: 100%;
+    }
+
+    /*MAIN CENTER */
+    main {
+
+        width: 100%;
+
+        margin-top: 10px;
+    }
+
+    header div#date_panel {
+        /*display: inline-flex;*/;
+        margin: 0 auto;
+        margin-left: 10px;
+        width: 100%;
+        background-color: rgb(51, 102, 0);;
+        padding: 10px;
+
+
+    }
+
+}

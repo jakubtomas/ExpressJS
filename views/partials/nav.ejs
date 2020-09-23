@@ -1,0 +1,25 @@
+<ul>
+
+   <!-- <script>
+        var url = window.location.href;
+        var array = url.split('/');
+
+        console.log(url);
+        console.log(array);
+    </script>-->
+
+
+
+    
+    <p>s<% console.log(`Hellou `);
+      %></p>
+        <%  menu.forEach((entry) => { %>
+        <li class="nav-item">
+            <a class="nav-link" href="/<%= entry.local %>"><%= entry.label %></a>
+        </li>
+    <% }) %>
+</ul>
+
+
+
+

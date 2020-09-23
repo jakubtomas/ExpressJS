@@ -1,0 +1,19 @@
+{
+    "compilerOptions": {
+        "target": "esnext",
+        "module": "commonjs",
+        "outDir": "dist",
+        "sourceMap": true,
+        "types": [
+            "node"
+        ],
+        "resolveJsonModule": true // vieme json natiahnut ako premmenu
+
+    },
+    "include": [
+        "src/**/*.ts"
+    ],
+    "exclude": [
+        "node_modules"
+    ]
+}
